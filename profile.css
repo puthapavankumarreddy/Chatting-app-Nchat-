@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(img/Dating-Chat-Rooms.jpg);
+}
+  
+  .profile {
+    text-align: center;
+    background-color:lightpink;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+
+  .profile-icon {
+    font-size: 30px; /* Adjust the size as needed */
+    margin-left: -95px;
+  }
+.button{
+    background-color:pink;
+    cursor: pointer;
+}  
+.bio{
+    cursor: pointer;
+}
+  
+  .profile-picture {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  .username {
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .bio {
+    color: #666;
+  }
+  
+  .details {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .details li {
+    margin-bottom: 5px;
+  }
+  
+  .details strong {
+    font-weight: bold;
+  }
+  .details li{
+    cursor: pointer;
+  }
+  /* Other styles can remain the same as before */
+
+.profile-header {
+  display: flex;
+  justify-content: flex-start; /* Align content to the left side */
+  align-items: center; /* Vertically align content */
+  padding: 10px; /* Adjust padding as needed */
+}
+
+.fa-arrow-left {
+  margin-right: 10px; /* Add space between the icon and other content */
+ font-size: 25px; /* Additional styling for the arrow icon if needed */
+}
+.fa-fa-camera {
+  margin-left: 10px;
+  font-size: 30px;
+
+}

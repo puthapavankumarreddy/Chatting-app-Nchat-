@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app.js">
+    <link rel="shortcut icon" href="img/WhatsApp Image 2023-12-29 at 20.43.12_90070f2b.jpg">
+    <title>Nchat</title>
+</head>
+
+<body>
+    <main>
+        <aside class="right-side">
+            <div class="header-container">
+                <div class="header">
+                    <div class="toggle-button">
+                        <a href="./menu.html">
+                            <i class="fas fa-bars"></i>
+
+                        </a>
+                        <!-- <i class="fas fa-arrow-left"></i>-->
+                        <a href="./lang.html">
+                            <i class="fas fa-home"></i>
+                        </a>
+                        <!-- <i class="fas fa-home"></i> Replace with your home icon                     -->
+                       <!-- Assuming this is your HTML structure with the icon -->
+                       <a href="./home.html">
+                           <i class="fas fa-sign-out"></i>
+                       </a>
+                       <!--Replace with your settings icon -->
+                    </div>
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="searchInput" placeholder="Search">
+                    </div>
+                </div>
+            </div>
+            <div class="body-container">
+                <div class="chat-list" id="chatList">
+                    <div class="chat-box" id="Msg">
+                        <div class="chat-img">
+                            <img src="img/profile-1.png" alt="">
+                        </div>
+                        <div class="chat-details">
+                            <div class="chat-title">
+                                <h3>Rajesh</h3>
+                                <span>06:04 PM</span>
+                            </div>
+                            <div class="chat-msg">
+                                <p>Please go to the showroom and ger the car</p>
+                                <span>8</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-box">
+                        <div class="chat-img">
+                            <img src="img/profile-2.png" alt="">
+                        </div>
+                        <div class="chat-details">
+                            <div class="chat-title">
+                                <h3>Swathi</h3>
+                                <span>05:04 PM</span>
+                            </div>
+                            <div class="chat-msg">
+                                <p>How are you?</p>
+                                <span>6</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-box">
+                        <div class="chat-img">
+                            <img src="img/profile-3.png" alt="">
+                        </div>
+                        <div class="chat-details">
+                            <div class="chat-title">
+                                <h3>Deepthi</h3>
+                                <span>04:04 PM</span>
+                            </div>
+                            <div class="chat-msg">
+                                <p>what about your health?</p>
+                                <span>4</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-box">
+                        <div class="chat-img">
+                            <img src="img/profile-4.png" alt="">
+                        </div>
+                        <div class="chat-details">
+                            <div class="chat-title">
+                                <h3>mukesh</h3>
+                                <span>03:04 PM</span>
+                            </div>
+                            <div class="chat-msg">
+                                <p>ok see you later</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-box">
+                        <div class="chat-img">
+                            <img src="img/profile-5.jpg" alt="">
+                        </div>
+                        <div class="chat-details">
+                            <div class="chat-title">
+                                <h3>Gangader</h3>
+                                <span>02:04 PM</span>
+                            </div>
+                            <div class="chat-msg">
+                                <p>hello</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-box">
+                        <div class="chat-img">
+                            <img src="img/profile-6.jpg" alt="">
+                        </div>
+                        <div class="chat-details">
+                            <div class="chat-title">
+                                <h3>Sravani</h3>
+                                <span>12:04 PM</span>
+                            </div>
+                            <div class="chat-msg">
+                                <p>come to the party</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-box">
+                        <div class="chat-img">
+                            <img src="img/profile-7.jpg" alt="">
+                        </div>
+                        <div class="chat-details">
+                            <div class="chat-title">
+                                <h3>Aswin</h3>
+                                <span>Wed</span>
+                            </div>
+                            <div class="chat-msg">
+                                <p>see you...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-box">
+                        <div class="chat-img">
+                            <img src="img/profile-6.jpg" alt="">
+                        </div>
+                        <div class="chat-details">
+                            <div class="chat-title">
+                                <h3>Saroja</h3>
+                                <span>05:04 PM</span>
+                            </div>
+                            <div class="chat-msg">
+                                <p>How are you?</p>
+                                <!-- <span></span> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-box">
+                        <div class="chat-img">
+                            <img src="img/profile-3.png" alt="">
+                        </div>
+                        <div class="chat-details">
+                            <div class="chat-title">
+                                <h3>Gaythari</h3>
+                                <span>04:04 PM</span>
+                            </div>
+                            <div class="chat-msg">
+                                <p>what about your health?</p>
+                                <!-- <span></span> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-box">
+                        <div class="chat-img">
+                            <img src="img/profile-1.png" alt="">
+                        </div>
+                        <div class="chat-details">
+                            <div class="chat-title">
+                                <h3>manish</h3>
+                                <span>03:04 PM</span>
+                            </div>
+                            <div class="chat-msg">
+                                <p>ok see you later</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-box">
+                        <div class="chat-img">
+                            <img src="img/profile-2.png" alt="">
+                        </div>
+                        <div class="chat-details">
+                            <div class="chat-title">
+                                <h3>Harsha</h3>
+                                <span>02:04 PM</span>
+                            </div>
+                            <div class="chat-msg">
+                                <p>hello</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-box">
+                        <div class="chat-img">
+                            <img src="img/profile-8.jpg" alt="">
+                        </div>
+                        <div class="chat-details">
+                            <div class="chat-title">
+                                <h3>Saraswathi</h3>
+                                <span>Dec 18</span>
+                            </div>
+                            <div class="chat-msg">
+                                <p>bye...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-box">
+                        <div class="chat-img">
+                            <img src="img/profile-1.png" alt="">
+                        </div>
+                        <div class="chat-details">
+                            <div class="chat-title">
+                                <h3>Adhi</h3>
+                                <span>Dec 17</span>
+                            </div>
+                            <div class="chat-msg">
+                                <p>ok see you later</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-box">
+                        <div class="chat-img">
+                            <img src="img/profile-2.png" alt="">
+                        </div>
+                        <div class="chat-details">
+                            <div class="chat-title">
+                                <h3>Vasavi</h3>
+                                <span>Dec 15</span>
+                            </div>
+                            <div class="chat-msg">
+                                <p>share me the details</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-box">
+                        <div class="chat-img">
+                            <img src="img/profile-8.jpg" alt="">
+                        </div>
+                        <div class="chat-details">
+                            <div class="chat-title">
+                                <h3>Manvitha</h3>
+                                <span>Dec 10</span>
+                            </div>
+                            <div class="chat-msg">
+                                <p>bye....</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-box">
+                        <div class="chat-img">
+                            <img src="img/profile-1.png" alt="">
+                        </div>
+                        <div class="chat-details">
+                            <div class="chat-title">
+                                <h3>Ganesh</h3>
+                                <span>Dec 09</span>
+                            </div>
+                            <div class="chat-msg">
+                                <p>ok see you later.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-box">
+                        <div class="chat-img">
+                            <img src="img/profile-2.png" alt="">
+                        </div>
+                        <div class="chat-details">
+                            <div class="chat-title">
+                                <h3>Sushma</h3>
+                                <span>Dec 07</span>
+                            </div>
+                            <div class="chat-msg">
+                                <!-- <p>see u......</p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <section class="chat">
+            <!-- Display chat messages here -->
+            <div class="chat-messages">
+                <!-- Chat messages between users -->
+                <!-- <div class="message-outgoing">
+                    <p>Hello dear</p>
+                </div>
+                <div class="message-incoming">
+                    <p>Hi i am fine what about you?</p>
+                </div>
+                <div class="message-outgoing">
+                    <p>Well and what about your son? </p>
+                </div>
+                <div class="message-incoming">
+                    <p>He is good!</p>
+                </div>
+                <div class="message-outgoing">
+                    <p>What is the plan for the new year.</p>
+                </div>
+                <div class="message-incoming">
+                    <p>we are going to our home town to celebrate the new year.</p>
+                </div>
+                <div class="message-outgoing">
+                    <p>what about your planning for this new year</p>
+                </div>
+                <div class="message-incoming">
+                    <p>what about the job?</p>
+                </div>
+                 Repeat the structure for other messages 
+                <div class="message-outgoing">
+                    <p>It is going on Well !</p>
+                </div>
+                <div class="message-incoming">
+                    <p>ok where are you going in the evening</p>
+                </div><div class="message-outgoing">
+                    <p>I am going to the movie at evening </p>
+                </div>
+                <div class="message-incoming">
+                    <p>ok which are you planned at the evening </p>
+                </div><div class="message-outgoing">
+                    <p>we are going to plan salar movie at second show</p>
+                </div>
+                <div class="message-incoming">
+                    <p>can we join with you </p>
+                </div><div class="message-outgoing">
+                    <p>we will go all together </p>
+                </div>
+                <div class="message-incoming">
+                    <p>ok </p>
+                </div><div class="message-outgoing">
+                    <p>ok then we will meat at the cenima teater</p>
+                </div>
+                <div class="message-incoming">
+                    <p>ok see you ...</p>
+                </div><div class="message-outgoing">
+                    <p>bye.....</p>
+                </div>
+                <div class="message-incoming">
+                    <p>ok bye....</p>
+                </div> 
+                 Add more messages -->
+            </div> 
+            <!-- Input field to type messages -->
+            <form class="message-input-form">
+                <input type="text" class="message-input" placeholder="Type a message...">
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <script>
+            // JavaScript code for search functionality
+            document.addEventListener('DOMContentLoaded', function () {
+                const searchInput = document.getElementById('searchInput');
+                const chatList = document.getElementById('chatList');
+                const chatBoxes = chatList.getElementsByClassName('chat-box');
+            
+                searchInput.addEventListener('input', function (event) {
+                    const searchText = event.target.value.toLowerCase();
+            
+                    for (const chatBox of chatBoxes) {
+                        const chatTitle = chatBox.querySelector('.chat-title h3').textContent.toLowerCase();
+            
+                        if (chatTitle.includes(searchText)) {
+                            chatBox.style.display = 'block'; // Show chat box if the name matches search text
+                        } else {
+                            chatBox.style.display = 'none'; // Hide chat box if the name doesn't match search text
+                        }
+                    }
+                });
+            });
+            </script>
+
+            <!-- chat messages java script code -->
+            <script>
+                // Get all chat boxes
+                const chatBoxes = document.querySelectorAll('.chat-box');
+                const chatMessages = document.querySelector('.chat-messages');
+            
+                // Function to clear chat messages
+                function clearChatMessages() {
+                    chatMessages.innerHTML = '';
+                }
+            
+                // Function to display selected chat messages
+                function displayChatMessages(messages) {
+                    messages.forEach((message, index) => {
+                        const div = document.createElement('div');
+                        div.classList.add(index % 2 === 0 ? 'message-outgoing' : 'message-incoming');
+                        div.innerHTML = `<p>${message}</p>`;
+                        chatMessages.appendChild(div);
+                    });
+                }
+            
+                // Add click event listeners to each chat box
+                chatBoxes.forEach((box, index) => {
+                    box.addEventListener('click', function () {
+                        // Sample messages corresponding to each chat box
+                        let messages = [];
+            
+                        // Fetch the messages based on the clicked box (add your logic here)
+                        if (index === 0) {
+                            messages = ["Hi mama", "hi ra mama","ala unnavu","parladu","ami chestunavu ippudu","ami ladu cali mama","avuna city ra ra","ami mama","job choostanu mama neku","saray mama vastanu","appudu","pandaga taruvatha","avuna","avuna","avunu mama","ok aiyatae","ok mama"];
+                        } else if (index === 1) {
+                            messages = ["Hey!", "I'm good. You?", "Doing well, thanks","what about your husband","good","where is he","he went to office","ohhh ok","okay"];
+                        } else if (index === 2) {
+                            messages = ["ami chestunavu ippudu","ami ladu cali mama","avuna city ra ra","ami mama","job choostanu mama neku","saray mama vastanu","appudu","pandaga taruvatha","avuna","avuna","avunu mama","ok aiyatae","ok mama"];
+                        }else if (index === 3) {
+                            messages = ["What are you doing", "watching movie", "i am also watching movie on the phone"];
+                        }else if (index === 4) {
+                            messages = ["Hi", " i am suffering fro fever", "Rignt what is your condition","Right now my contion is stable"];
+                        }else if (index === 5) {
+                            messages = ["where are dear", "i am in the super market", "you went to buy the groceries in the market"];
+                        }else if (index === 6) {
+                            messages = ["Hi dear", "hi where are you", "in the pg..","what are you doing in the pg","simply taking rest","can we go out and chill throught out the night","okay we can go now","ok then i will come and pick up you","ok"];
+                        }else if (index === 7) {
+                            messages = ["gramdma came to our home today", "okay", "how many days did she spend here."];
+                        }else if (index === 8) {
+                            messages = ["pandagaku ralada mama", "vastuna ra mama", "appudu ra","next week vastanu mama","avuna mama","ok ra mama","ok iyataie.."];
+                        }else if (index === 9) {
+                            messages = ["me avva pike poyande a mama", "avunu mama nina madhanayam poyande ", "aminde","health baga ladu last two months nunchi"];
+                        }else if (index === 10) {
+                            messages = ["mama swimming podam ra ", "a bai lo ke veldam ra mama ippudu", "ma mama vala baye loke podam ra ","sara lay ra ","ma inte dagaraku ra idram podam"];
+                        }else if (index === 11) {
+                            messages = ["hi ", "akada poyavu", "marrage friend de vella","oh avuna ","appudu velavu","nina night velanu."];
+                        }else if (index === 12) {
+                            messages = ["haa", "ade ami baga ladu  movie", "avunu.","avunu","Aaaaaa......","Oh.........","....","....."];
+                        }else if (index === 13) {
+                            messages = ["inka ami chapali", "ami ladu nuvvae chpali ", "ami unde cali."];
+                        }else if (index === 14) {
+                            messages = ["avuna", "aminde ", "accident aiyande","avuna appudu","nina","avuna "];
+                        }else if (index === 15) {
+                            messages = ["ala na ", "pandaga ku andaram podam", "ok lay","ok mama"];
+                        }
+                        // Add more conditions to populate messages for other chat boxes
+            
+                        // Clear previous messages and display new ones
+                        clearChatMessages();
+                        displayChatMessages(messages);
+                    });
+                });
+            </script>
+            
+
+    </main>
+    <script src="https://kit.fontawesome.com/9e5ba2e3f5.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

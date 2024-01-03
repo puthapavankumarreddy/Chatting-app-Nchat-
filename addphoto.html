@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Insert Photo Page</title>
+  <link rel="stylesheet" href="addphoto.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Insert Photo</h1>
+    <form id="photoForm" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="photo">Choose a photo:</label>
+        <input type="file" id="photo" name="photo" accept="image/*" required>
+      </div>
+      <button type="submit"></a>Upload Photo</button>
+      <button onclick="saveSettings()"><a href="./profile.html" style="text-decoration: none;">back to profile</a></button>
+    </form>
+    <div class="preview">
+      <h2>Preview:</h2>
+      <img id="previewImage" src="#" alt="Preview" style="display: none;">
+    </div>
+  </div>
+
+  <script>
+    const photoInput = document.getElementById('photo');
+    const previewImage = document.getElementById('previewImage');
+
+    photoInput.addEventListener('change', function() {
+      const file = this.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          previewImage.src = e.target.result;
+          previewImage.style.display = 'block';
+        }
+        reader.readAsDataURL(file);
+      }
+    });
+  </script>
+</body>
+</html>

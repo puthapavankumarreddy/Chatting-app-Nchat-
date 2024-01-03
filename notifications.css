@@ -1,0 +1,93 @@
+/* Basic styling for the notification settings */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #075e54;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+.notification-settings {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.notification-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+}
+
+.option-icon {
+  margin-right: 15px;
+  font-size: 24px;
+}
+
+.option-details {
+  flex: 1;
+}
+
+.toggle {
+  position: relative;
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-label {
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-label::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: left 0.3s ease;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+  background-color: #25d366; /* Change color when checked */
+}
+
+.toggle-checkbox:checked + .toggle-label::before {
+  left: calc(100% - 27px); /* Move the indicator to the right when checked */
+}
+
+footer {
+  background-color: #075e54;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
